@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+  <link rel="stylesheet" type="text/css" href="../common.css">
+  <script type="text/javascript">
+    function changeDownloadLink(){
+      document.getElementById("downloadLink").href = "http://localhost:9013/" + document.getElementById("fileId").value;
+    }
+  </script>
+</head>
+
+<body>
+  <p>
+    File id: <input type="text" id="fileId" oninput="changeDownloadLink()" />
+  </p>
+  <p>
+    <a href="#" id="downloadLink">Download</a>
+  </p>
+</body>
+
+</html>
