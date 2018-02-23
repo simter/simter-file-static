@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Attachment Form</title>
+  <link rel="stylesheet" type="text/css" href="../common.css">
+  <script type="text/javascript">
+    function changeAttachmentFormLink(){
+      document.getElementById("attachmentFormLink").href = "http://localhost:9013/attachment/" + document.getElementById("fileId").value;
+    }
+  </script>
+</head>
+
+<body>
+  <p>
+    File id: <input type="text" id="fileId" oninput="changeAttachmentFormLink()" />
+  </p>
+  <p>
+    <a href="#" id="attachmentFormLink">Attachment form</a>
+  </p>
+</body>
+
+</html>
