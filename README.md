@@ -3,8 +3,7 @@
 ## Initial
 
 ```
-npm install -g parcel-bundler
-npm install
+yarn install
 ```
 
 ## Development
@@ -16,5 +15,5 @@ npm start
 ## Build
 
 ```
-parcel build src/index.html
+npm run build
 ```
